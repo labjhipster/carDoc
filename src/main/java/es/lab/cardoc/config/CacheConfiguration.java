@@ -42,6 +42,10 @@ public class CacheConfiguration {
             createCache(cm, es.lab.cardoc.domain.User.class.getName());
             createCache(cm, es.lab.cardoc.domain.Authority.class.getName());
             createCache(cm, es.lab.cardoc.domain.User.class.getName() + ".authorities");
+            createCache(cm, es.lab.cardoc.domain.Car.class.getName());
+            createCache(cm, es.lab.cardoc.domain.Car.class.getName() + ".documents");
+            createCache(cm, es.lab.cardoc.domain.Document.class.getName());
+            createCache(cm, es.lab.cardoc.domain.Content.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
